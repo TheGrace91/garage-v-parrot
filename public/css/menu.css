@@ -1,0 +1,36 @@
+.nav-link{
+    margin: 5px;
+    font-size:18px;
+    color: black !important;  /* Utilisez !important si nécessaire */
+
+}
+
+
+/* Change la couleur des liens du menu lors du survol */
+.navbar-nav .nav-link:hover {
+    color: #d92332; /* Choisissez la couleur que vous souhaitez */
+    opacity: 0.3;  /* Vous pouvez choisir n'importe quelle valeur entre 0 et 1 */
+    transition: opacity 0.9s ease-in-out;  /* Durée de la transition et type d'animation */
+}
+
+
+/* État des liens du menu lors du survol */
+.navbar-nav .nav-link:hover {
+    opacity: 1;  /* Opacité complète lors du survol */
+    color: #d92332 !important;  /* Utilisez !important si nécessaire */
+
+}
+
+/* État initial du menu */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    height: 100px;
+}
+
+/* État du menu après le défilement */
+.navbar.scrolled {
+    background-color: #FFFFFF; /* ou toute autre couleur */
+    font-weight: 600;
+    opacity: 0.8;
+}
