@@ -1,0 +1,16 @@
+{# templates/vehicles/results.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Résultats de la recherche</h1>
+
+    <ul>
+        {% for vehicle in vehicles %}
+            <li>
+                Marque: {{ vehicle.marque }}, Modèle: {{ vehicle.modele }}, Prix: {{ vehicle.prix }} €
+            </li>
+        {% else %}
+            <li>Aucun véhicule trouvé</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
